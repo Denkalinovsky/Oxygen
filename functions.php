@@ -9,6 +9,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Direct access not allowed.
 }
 
+add_action( 'wp_enqueue_scripts', function(){
+	wp_enqueue_script( 'newscript', get_template_directory_uri() . '/assets/js/to-order.js');
+});
+
+// echo get_template_directory_uri() . '/assets/js/to-order.js';
+
 // Theme content width
 $GLOBALS['content_width'] = isset( $GLOBALS['content_width'] ) ? $GLOBALS['content_width'] : 1170;
 
