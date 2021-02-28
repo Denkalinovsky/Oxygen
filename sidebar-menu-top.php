@@ -66,8 +66,8 @@ if ( empty( $nav_menu_locations['top-menu'] ) ) {
 							<?php echo $top_menu; ?>
 
                         </nav>
-
-						<?php get_template_part( 'tpls/cart-ribbon' ); ?>
+<!--отключение корзины-->
+<!--						?php get_template_part( 'tpls/cart-ribbon' ); ?>-->
 
                     </div>
 
