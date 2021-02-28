@@ -18,13 +18,17 @@ defined( 'ABSPATH' ) || exit;
 	<?php wp_head(); ?>
 
 </head>
+
+<!--подключения popup-->
+<?php include('popup-to-order.php');?>
+
 <body <?php body_class(); ?>>
 
 	<?php
 		// Header cart
 		if ( oxygen_is_shop_supported() ) :
 			get_template_part( 'tpls/header-cart' );
-		endif; 
+		endif;
 	?>
 
 	<?php if ( ! defined( 'NO_HEADER_MENU' ) ) : ?>
